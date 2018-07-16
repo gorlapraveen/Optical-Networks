@@ -1,0 +1,62 @@
+GLPSOL: GLPK LP/MIP Solver, v4.52
+Parameter(s) specified in the command line:
+ --cpxlp /tmp/19428-pulp.lp -o /tmp/19428-pulp.sol
+Reading problem data from '/tmp/19428-pulp.lp'...
+176 rows, 168 columns, 665 non-zeros
+168 integer variables, none of which are binary
+787 lines were read
+GLPK Integer Optimizer, v4.52
+176 rows, 168 columns, 665 non-zeros
+168 integer variables, none of which are binary
+Preprocessing...
+176 rows, 168 columns, 665 non-zeros
+168 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 176
+Solving LP relaxation...
+GLPK Simplex Optimizer, v4.52
+176 rows, 168 columns, 665 non-zeros
+      0: obj =   6.100000000e+01  infeas =  5.600e+01 (0)
+*    60: obj =   6.020000000e+01  infeas =  0.000e+00 (0)
+*    87: obj =   5.800000000e+01  infeas =  2.220e-16 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
++    87: mip =     not found yet >=              -inf        (1; 0)
++   300: >>>>>   5.800000000e+01 >=   5.800000000e+01   0.0% (23; 8)
++   300: mip =   5.800000000e+01 >=     tree is empty   0.0% (0; 61)
+INTEGER OPTIMAL SOLUTION FOUND
+Time used:   0.0 secs
+Memory used: 0.4 Mb (368356 bytes)
+Writing MIP solution to `/tmp/19428-pulp.sol'...
+status: Optimal
+optimal cost: 58
+f ((2, 5), 1) 2 : 1
+f ((2, 5), 1) 7 : 1
+f ((5, 6), 1) 7 : 1
+f ((1, 3), 1) 1 : 1
+f ((1, 3), 1) 3 : 1
+f ((1, 6), 1) 6 : 1
+f ((3, 4), 1) 1 : 1
+f ((4, 1), 1) 3 : 1
+f ((4, 1), 1) 6 : 1
+f ((6, 2), 1) 7 : 1
+f ((5, 3), 1) 2 : 1
+f ((5, 3), 1) 4 : 1
+f ((5, 3), 1) 5 : 1
+g ((2, 5), 1) (((2, 5), 1), 1) 2 : 1
+g ((2, 5), 1) (((2, 5), 1), 1) 7 : 1
+g ((5, 6), 1) (((5, 6), 1), 1) 7 : 1
+g ((1, 3), 1) (((1, 3), 1), 2) 3 : 1
+g ((1, 3), 1) (((1, 3), 1), 1) 1 : 1
+g ((1, 6), 1) (((1, 6), 1), 1) 6 : 1
+g ((3, 4), 1) (((3, 4), 1), 1) 1 : 1
+g ((4, 1), 1) (((4, 1), 1), 1) 3 : 1
+g ((4, 1), 1) (((4, 1), 1), 1) 6 : 1
+g ((6, 2), 1) (((6, 2), 1), 1) 7 : 1
+g ((5, 3), 1) (((5, 3), 1), 2) 2 : 1
+g ((5, 3), 1) (((5, 3), 1), 2) 4 : 1
+g ((5, 3), 1) (((5, 3), 1), 2) 5 : 1
+
